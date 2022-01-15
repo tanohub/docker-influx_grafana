@@ -1,0 +1,18 @@
+apiVersion: 1
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    database: db01
+    org_id: 1
+    user: db01admin
+    password: db01password
+    url: http://influxdb:8086
+    isDefault: true
+    editable: true
+    jsonData:
+      url: http://influxdb:8086
+      apiToken: tokentoken01
+      useProxy: false
+      showOffline: true
+      allowInfraExplore: true
